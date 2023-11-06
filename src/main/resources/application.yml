@@ -1,0 +1,9 @@
+micronaut:
+ application:
+  name: redis-testresources-demo
+
+redis:
+  caches:
+    mycache:
+      expire-after-write: 1d
+      value-serializer: io.micronaut.json.JsonObjectSerializer
